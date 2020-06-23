@@ -1,0 +1,314 @@
+:root {
+	--bright-red: hsl(12, 88%, 59%);
+	--dark-blue: hsl(228, 39%, 23%);
+	--dark-grayish-blue: hsl(227, 12%, 61%);
+	--very-pale-red: hsl(13, 100%, 96%);
+	--very-light-gray: hsl(0,0%,98%);
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* General style */
+a {
+	text-decoration: none;
+}
+
+a:link, a:visited {
+	font-weight: 500;
+}
+
+a, button {
+	cursor: pointer;
+}
+
+button {
+	border: none;
+	padding: 18px 32px;
+	border-radius: 18px;
+	font-weight: 700;
+	-webkit-box-shadow: 0px 42px 48px -26px var(--bright-red);
+	-moz-box-shadow: 0px 42px 48px -26px var(--bright-red);
+	box-shadow: 0px 42px 48px -26px var(--bright-red);
+}
+
+.btn-primary {
+	background-color: var(--bright-red);
+	color: var(--very-light-gray);
+}
+
+.btn-primary:hover {
+	background-color: hsl(12, 88%, 70%)
+}
+
+ul, ol {
+	list-style-type: none;
+}
+
+ol {
+	counter-reset: my-counter;
+}
+
+ol li {
+	counter-increment: my-counter;
+}
+
+ol li:before {
+	content: "0" counter(my-counter);
+	font-size: inherit;
+	padding: 11px 24px;
+	background-color: var(--bright-red);
+	color: var(--very-light-gray);
+	border-radius: 11px;
+	margin-right: 28px;
+}
+
+/*li {
+	margin: 0;
+}*/
+
+h1, h2, h4, a {
+	color: var(--dark-blue);
+}
+
+h1 {
+	font-size: 2.4em;
+	line-height: 60px;
+	margin-bottom: 50px;
+}
+
+h2 {
+	font-size: 2em;
+	line-height: 44px;
+}
+
+h4 {
+	margin-bottom: 32px;
+	display: inline-block;
+}
+
+p {
+	line-height: 25px;
+}
+
+body {
+	width: 1440px;
+	font-family: 'Be Vietnam', sans-serif;
+	font-size: 16px;
+	background: url(images/bg-tablet-pattern.svg) 760px -160px no-repeat, url(images/bg-tablet-pattern.svg) -520px 1320px no-repeat, var(--very-light-gray);
+	color: var(--dark-grayish-blue);
+}
+
+.introduction, .reason, .orange {
+	padding: 0 165px;
+}
+
+/* Spesific style */
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 73px 165px;
+	margin-bottom: 57px;
+}
+
+header img {
+	padding-top: 12px;
+}
+
+nav ul {
+	display: flex;
+}
+
+nav ul li{
+	margin-right: 34px;
+}
+
+nav ul li:last-child {
+	margin-right: 0;
+}
+
+.nav-toggle {
+	display: none;
+}
+
+.nav-link:link, .nav-link:visited {
+	color: var(--dark-blue);
+}
+
+a.nav-link:hover {
+	color: hsl(228, 39%, 45%);
+}
+
+.col-2 {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-column-gap: 150px;
+}
+
+.introduction {
+	align-items: center;
+	margin-bottom: 140px;
+}
+
+.caption p {
+	margin-bottom: 46px;
+}
+
+.introduction figure img {
+	width: 610px;
+}
+
+.reason {
+	margin-bottom: 158px;
+}
+
+.reason__main h2 {
+	margin-bottom: 44px;
+}
+
+.reason__main p {
+	width: 325px;
+}
+
+.reason__point li {
+	margin-bottom: 58px;
+}
+
+.reason__point li:last-child {
+	margin-bottom: 0;
+}
+
+.testimony {
+	text-align: center;
+	margin-bottom: 180px;
+}
+
+.testimony h2 {
+	margin-bottom: 80px;
+}
+
+.testimony-container {
+	margin-bottom: 46px;
+}
+
+.card {
+	position: relative;
+	width: 540px;
+	padding: 65px 45px 40px;
+	background-color: var(--very-pale-red);
+	text-align: center;
+	margin: 40px 16px;
+}
+
+.card img {
+	height: 72px;
+	width: 72px;
+	position: absolute;
+	top: -36px;
+	left: calc(50% - 36px);
+}
+
+.orange {
+	background-color: var(--bright-red);
+	background-image: url(images/bg-simplify-section-desktop.svg);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.orange h2 {
+	color: var(--very-light-gray);
+	width: 450px;
+	margin: 0;
+}
+
+.orange button {
+	background-color: var(--very-light-gray);
+	color: var(--bright-red);
+}
+
+/* Footer */
+
+footer {
+	background-color: var(--dark-blue);
+	padding: 60px 165px;
+	position: relative;
+}
+
+footer a {
+	color: var(--very-light-gray);
+}
+
+footer a:hover {
+	color: var(--bright-red);
+}
+
+.flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+.flex .logo-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.flex .brands {
+	display: flex;
+	justify-content: space-between;
+}
+
+.flex .brands a {
+	font-size: 20px;
+}
+
+.flex ul {
+	column-count: 2;
+	column-gap: 150px;
+}
+
+.flex ul li {
+	line-height: 35px;
+}
+
+footer form {
+	display: flex;
+	align-items: flex-start;
+}
+
+footer form .input-container {
+	margin-right: 7px;
+}
+
+footer form .input-container p {
+	margin-left: 17px;
+}
+
+footer form input[type="text"] {
+	padding: 18px 17px;
+	border-radius: 36px;
+	border: none;
+	width: 100%;
+}
+
+footer form input[type="text"]:focus {
+	outline: none;
+}
+
+footer p {
+	font-size: 12px;
+}
+
+footer .license {
+	position: absolute;
+	right: 165px;
+	bottom: 60px;
+}

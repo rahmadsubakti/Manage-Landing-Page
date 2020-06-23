@@ -1,0 +1,177 @@
+@media screen and (max-width: 375px) {
+	body {
+		width: 375px;
+		background: url(images/bg-tablet-pattern.svg) 50px -100px / 423px no-repeat, url(images/bg-tablet-pattern.svg) 240px 780px /  333px no-repeat, var(--very-light-gray);
+	}
+
+	ol li:before {
+		margin-right: 2px;
+	}
+
+	header {
+		padding: 45px 24px;
+	}
+
+	nav {
+		background-color: var(--very-light-gray);
+		margin: 0 24px;
+		display: flex;
+		justify-content: center;
+	}
+
+	nav ul {
+		flex-direction: column;
+		text-align: center;
+		padding: 45px 0 10px;
+	}
+
+	nav ul li{
+		margin-right: 0;
+		margin-bottom: 35px;
+	}
+
+	header nav {
+		display: none;
+	}
+
+	.nav-toggle {
+		display: block;
+		padding: 0;
+		background: transparent;
+		outline: none;
+		z-index: 8;
+	}
+
+	header button {
+		display: none;
+	}
+
+	.col-2 {
+		grid-template-columns: 1fr;
+		grid-row-gap: 40px;
+	}
+
+	.introduction {
+		margin-bottom: 105px;
+		padding: 0 24px;
+		text-align: center;
+	}
+
+	.caption {
+		width: 100%;
+	}
+
+	.caption p {
+		width: 300px;
+		margin: 0 auto 32px;
+	}
+
+	.introduction figure {
+		order: -1;
+	}
+
+	.introduction figure img {
+		width: 330px;
+	}
+
+	.reason {
+		margin-bottom: 82px;
+		padding: 0 24px;
+	}
+
+	.reason h2 {
+		margin-bottom: 58px;
+		text-align: center;
+	}
+
+	.reason__main p {
+		text-align: center;
+		margin: 0 0 60px;
+	}
+
+	.card {
+		width: 360px;
+	}
+
+	ul.slick-dots {
+		display: flex;
+		justify-content: center;
+	}
+
+	ul.slick-dots li button {
+		font-size: 0;
+		padding: 5px;
+		background-color: var(--very-light-gray);
+		border: 1px solid var(--bright-red);
+		margin: 0 2px;
+	}
+
+	ul.slick-dots li.slick-active button {
+		background-color: var(--bright-red);
+	}
+
+	.orange {
+		padding: 104px 24px;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.orange h2 {
+		margin-bottom: 33px;
+		width: 100%;
+	}
+
+	footer {
+		padding: 51px 25px 32px;
+	}
+
+	.flex {
+		flex-direction: column-reverse;
+		align-items: center;
+		margin-bottom: 60px;
+	}
+
+	.flex .logo-container {
+		flex-direction: column-reverse;
+		width: 100%;
+	}
+
+	.flex .brands {
+		margin-bottom: 55px;
+	}
+
+	.flex .brands a {
+		font-size: 32px;
+	}
+
+	.flex ul {
+		column-gap: 75px;
+		margin-bottom: 54px;
+	}
+
+	footer form {
+		width: 100%;
+		justify-content: space-between;
+		margin-bottom: 62px;
+	}
+
+	footer form .input-container {
+		margin-right: 7px;
+		width: 100%;
+	}
+
+	footer .license {
+		position: static;
+		text-align: center;
+	}
+
+	#modal {
+		display: none;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(rgba(240,240,240,.5), rgba(0,0,0,.5));
+		padding-top: 120px;
+	}
+}
